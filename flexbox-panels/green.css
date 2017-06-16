@@ -1,0 +1,81 @@
+.box{
+  background-color:#fff;
+  border:solid 2px lightgreen;
+  box-shadow:0 2px 2px -2px #000;
+  flex:1 1;
+  height:200px;
+  margin:1vmin;
+}
+
+.inner-box{
+  background-color:#fff;
+  border:solid 2px lightgreen;
+  box-shadow:0 2px 2px -2px #000;
+  flex:1 1;
+  height:200px;
+  margin:1vmin;
+}
+
+.columns-box{
+  background-color:#fff;
+  border:solid 2px lightgreen;
+  box-shadow:0 2px 2px -2px #000;
+  flex:1 1;
+  height:200px;
+  margin:1vmin;
+}
+
+.wrap {
+    width: 960px;
+    margin: 0 auto;
+    border-left: 1px dashed grey;
+    border-right: 1px dashed grey;
+}
+
+.box:nth-child(1) {
+    flex-basis:600px;
+}
+
+.box:nth-child(2) {
+    flex-basis:200px;
+}
+
+.columns {
+    flex-direction: row;
+    flex-basis: 480px;
+    display: flex;
+}
+
+.columns-box:nth-child(1) {
+    flex-basis:200px;
+    height: 65%;
+    /*flex: 1;*/
+}
+
+.columns-box:nth-child(2) {
+    flex-basis:200px;
+    height: 65%;
+    /*flex: 1;*/
+}
+
+.stack-boxes {
+    display: flex;
+    flex-basis: 480px;
+    flex-wrap: wrap;
+}
+
+.stack-boxes .inner-box:nth-child(1) {
+    flex-basis:400px;
+    height: auto;
+}
+
+.stack-boxes .inner-box:nth-child(2) {
+    flex-basis:100px;
+    height: auto;
+
+}
+
+.stack-boxes .inner-box:nth-child(3) {
+    flex-basis:100px;
+    height: auto;
+}

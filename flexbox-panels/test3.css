@@ -1,0 +1,127 @@
+html {
+    margin: 0; 
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.fish {
+  position: absolute;
+  top: 180px;
+  left: 160px;
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
+  animation: move-right 9s infinite linear;
+}
+
+.body {
+  /*position: ;*/
+  top: 0;
+  left: 0;
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  -webkit-animation: 1s wiggle infinite ease-in-out;
+          animation: 1s wiggle infinite ease-in-out;
+}
+
+.fin {
+  position: absolute;
+  top: 0;
+  left: 50px;
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  -webkit-animation: 1s wobble infinite ease-in-out;
+          animation: 1s wobble infinite ease-in-out;
+}
+
+.fish {
+    transform: rotate(0deg) translate(0px, 0px) rotate(180deg);
+}
+
+/*.ring:nth-of-type(1) .fish:nth-child(2) {
+  -webkit-transform: scale(0.5) rotate(60deg) translate(260px, 0px) rotate(90deg);
+          transform: scale(0.5) rotate(60deg) translate(260px, 0px) rotate(90deg);
+}*/
+
+@keyframes wiggle {
+    0% {
+        transform: rotate(7deg);
+    }
+    50% {
+        transform: rotate(-7deg);
+    }
+    100% {
+        transform: rotate(7deg);
+    }
+}
+
+@keyframes wobble {
+    0% {
+        -webkit-transform: rotate(-20deg) scale(1.2);
+                transform: rotate(-15deg) scale(1.2);
+    }
+    50% {
+        -webkit-transform: rotate(20deg) scale(1.2);
+                transform: rotate(15deg) scale(1.2);
+    }
+    100% {
+        -webkit-transform: rotate(-20deg) scale(1.2);
+                transform: rotate(-15deg) scale(1.2);
+    }
+}
+
+@keyframes move-right {
+    from { left: -15%; }
+    to { left: 120%; }
+}
+
+/*.space {
+    position: absolute;
+    height: 200px;
+    width: 100%;
+    background: teal;
+    display: inline-block;
+    z-index: 1;
+}
+
+#enter {
+    position: absolute;
+    height: 200px;
+    width: 75px;
+    background: black;
+    left: 0;
+    display: inline-block;
+    z-index: 3;
+}
+
+#enter::after {
+   
+}
+
+#end {
+    position: absolute;
+    height: 200px;
+    width: 75px;
+    background: black;
+    float: right;
+    display: inline-block;
+    z-index: 3;
+    right: 0;
+}
+*/
