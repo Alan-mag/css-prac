@@ -15,6 +15,22 @@ body {
     position: absolute;
 }
 
+#enter {
+    width: 200px;
+    height: 100%;
+    background: lightseagreen;
+    position: absolute;
+    left: 0;
+}
+
+#end {
+    width: 200px;
+    height: 100%;
+    background: purple;
+    position: absolute;
+    right: 0;
+}
+
 .container {
     width: 100%;
     height: 50%;

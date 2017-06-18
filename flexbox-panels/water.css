@@ -13,7 +13,7 @@ body {
   flex:1 1;
   height:200px;
   margin:1vmin;
-  opacity: .7;
+  opacity: 1;
 }
 
 .highlight {
@@ -26,8 +26,8 @@ body {
     margin: 0 auto;
     border-left: 1px solid greenyellow;
     border-right: 1px solid greenyellow;
-    background: navy;
-    opacity: .7;
+    background: rgba(0, 0, 128, 0.42);
+    opacity: 1;
     margin-top: 50vh;
     transform: translate(0,-35%);
 }
@@ -233,3 +233,141 @@ body {
 
 
 /************* BOX 8 - CLOWN FISH SWIMMING RIGHT **************/
+.start {
+    width: 155px;
+    height: 200px;
+    background: #012927;
+    position: absolute;
+    display: flex;
+    align-items: left;
+}
+
+.end {
+    width: 155px;
+    height: 200px;
+    background: #012927;
+    position: relative;
+    right: 0;
+    float: right;
+    display: inline-block;
+}
+
+.clown-fish {
+  position: relative;
+  float: left;
+  top: 0px;
+  left: 0px;
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
+  animation: move-right 8s infinite linear;
+  transform: rotate(0deg) translate(0px, 0px) rotate(180deg);
+}
+
+.body {
+  /*position: ;*/
+  top: 0;
+  left: 0;
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  -webkit-animation: 1s wiggle infinite ease-in-out;
+          animation: 1s wiggle infinite ease-in-out;
+}
+
+.fin {
+  position: relative;
+  top: -45px;
+  left: 50px;
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  -webkit-animation: 1s wobble infinite ease-in-out;
+          animation: 1s wobble infinite ease-in-out;
+}
+
+.clown-fish:nth-child(1) {
+    animation: move-right 3s infinite linear;
+        margin-left: 15px;
+}
+
+.clown-fish:nth-child(2) {
+    animation: move-right-lrg 7.5s infinite linear;
+    transform: scale(1.4) rotate(180deg);
+}
+
+.clown-fish:nth-child(3) {
+    margin-top: 15px;
+    animation: move-right 5s infinite linear;
+    transform: scale(1.1) rotate(180deg);
+    margin-left: -130px;
+}
+
+.clown-fish:nth-child(4) {
+    margin-top: 25px;
+    animation: move-right 4.4s infinite linear;
+    transform: scale(.6) rotate(180deg);
+    margin-left: -120px;
+}
+
+.clown-fish:nth-child(5) {
+    margin-top: -25px;
+    animation: move-right 4.6s infinite linear;
+    margin-left: -135px;
+}
+
+.clown-fish:nth-child(6) {
+    margin-top: 10px;
+    animation: move-right 6.7s infinite linear;
+    margin-left: -140px;
+}
+
+.clown-fish:nth-child(7) {
+    animation: move-right 6.5s infinite linear;
+    margin-left: -150px;
+}
+
+.clown-fish:nth-child(8) {
+    animation: move-right 4.2s infinite linear;
+    margin-left: -155px;
+}
+
+
+
+
+/************************KEYFRAMES****************************/
+
+@keyframes move-right {
+    from { left: 0%; }
+    to { left: 80%; }
+}
+
+@keyframes move-right-lrg {
+    0% { left: -5%; }
+    50% { left: 71%; }
+    100% { left: 71%; }
+}
+
+@keyframes wiggle {
+    0% {
+        transform: rotate(7deg);
+    }
+    50% {
+        transform: rotate(-7deg);
+    }
+    100% {
+        transform: rotate(7deg);
+    }
+}
+
+@keyframes wobble {
+    0% {
+        -webkit-transform: rotate(-20deg) scale(1.2);
+                transform: rotate(-15deg) scale(1.2);
+    }
+    50% {
+        -webkit-transform: rotate(20deg) scale(1.2);
+                transform: rotate(15deg) scale(1.2);
+    }
+    100% {
+        -webkit-transform: rotate(-20deg) scale(1.2);
+                transform: rotate(-15deg) scale(1.2);
+    }
+}
