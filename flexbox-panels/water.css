@@ -14,6 +14,7 @@ body {
   height:200px;
   margin:1vmin;
   opacity: 1;
+  position: relative;
 }
 
 .highlight {
@@ -223,6 +224,77 @@ body {
 
 /** Add to BOX Style ***/
 
+
+/************* BOX 1 - SQUID **************/
+.pearl {
+  width: 100px;
+  height: 100px;
+  background: purple;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  margin: 0 auto;
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%,0);
+  top: 10%;
+  animation: 2.5s float infinite ease-in-out;
+}
+
+.pearl:hover {
+  opacity: .9;
+}
+
+.tentacle {
+    height: 80px;
+    width: 15px;
+    border-radius: 30px;
+    top: 80px;
+    background: violet;
+    position: relative;
+    display: inline-block;
+    opacity: .7;
+}
+
+.tentacle:nth-child(1) {
+  animation: 3s float-tentacle infinite ease-in-out;
+  left: 5px;
+}
+
+.tentacle:nth-child(2) {
+  animation: 3.3s float-tentacle infinite ease-in-out;
+  left: 10px;
+}
+.tentacle:nth-child(3) {
+  animation: 4.2s float-tentacle infinite ease-in-out;
+  left: 15px;
+}
+.tentacle:nth-child(4) {
+  animation: 4.6s float-tentacle infinite ease-in-out;
+  left: 20px;
+}
+
+@keyframes float {
+  0%, 100% {
+    top: 12%;
+  }
+  50% {
+    top: 5%;
+  }
+}
+
+@keyframes float-tentacle {
+  0%, 100% {
+    top: 50px;
+  }
+  50% {
+    top: 70px;
+  }
+}
+
+
 /************* BOX 2 - CLOWN FISH SWIMMING LEFT **************/
 .box:nth-child(2) {
   border-radius: 25px;
@@ -342,17 +414,76 @@ span:nth-of-type(3) {
 /************* BOX 4 -  **************************************/
 .box:nth-child(4) {
   border-radius: 30%;
-  background: #3f515a;
+  background: #031b27;
   border: solid 2px #022d42;
-  box-shadow: inset 1px 1px 20px 2px #022d42;
+  box-shadow: inset 1px 1px 20px 2px #0099e4;
 }
+
+
+
+
 
 /************* BOX 5 -  **************************************/
 .box:nth-child(5) {
   border-radius: 30%;
-  background: #3f515a;
+  background: #031b27;
   border: solid 2px #022d42;
-  box-shadow: inset 1px 1px 20px 2px #022d42;
+  box-shadow: inset 1px 1px 20px 2px #0099e4;
+}
+
+.crab {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 25%;
+  left: 25%;
+  background: orangered;
+  box-shadow: inset 0px 0px 14px 7px #00002d;
+  animation: sneak-left 10s infinite ease-in;
+  border-radius: 25px;
+}
+
+.crab2 {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 55%;
+  left: 25%;
+  background: orangered;
+  box-shadow: inset 0px 0px 14px 7px #00002d;
+  animation: sneak-right 10s infinite ease-in;
+  border-radius: 25px;
+}
+
+@keyframes sneak-left {
+  0%{
+    opacity: 0;
+  }
+  60% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes sneak-right {
+  0% {
+    opacity: 1;
+  }
+  10% {
+    opacity: 0;
+  }
+
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 /************* BOX 6 -  **************************************/
