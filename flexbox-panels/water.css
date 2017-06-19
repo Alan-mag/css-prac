@@ -220,19 +220,214 @@ body {
   }
 }
 
-
+/** Add to BOX Style ***/
 
 /************* BOX 2 - CLOWN FISH SWIMMING LEFT **************/
+.box:nth-child(2) {
+  border-radius: 25px;
+  box-shadow: inset 1px 0px 20px 11px #014c01;
+}
 
 
-/************* BOX 3 - CLOWN FISH SWIMMING RIGHT **************/
+/************* BOX 3 -  **************************************/
+.box:nth-child(3) {
+  border-radius: 25px;
+  position: relative;
+}
+
+.square-fish {
+  width:100px;
+  height:100px;
+  top:80px;
+  right:75px;
+  background:tomato;
+  position:absolute;
+  animation:5s fly infinite linear;
+}
+.shadow {
+  width:140px;
+  height:20px;
+  background:rgba(0,0,0,.15);
+  position:absolute;
+  top:170px;
+  animation:5s fly2 infinite linear; 
+  border-radius:50%;
+}
+span:nth-of-type(1) {
+  width:10px;
+  height:10px;
+  background:white;
+  border-radius:50%;
+  z-index:9;
+  display:inline-block;
+  position:absolute;
+  margin:70px 0 0 7px;
+}
+span:nth-of-type(2) {
+    width: 25px;
+    height: 25px;
+    background: rgb(253, 185, 185);
+    position: absolute;
+    top: -25px;
+    left: 99px;
+    z-index: 3;
+}
+span:nth-of-type(3) {
+    width: 50px;
+    height: 50px;
+    background: rgb(197, 52, 5);
+    position: absolute;
+    top: -50px;
+    left: 99px;
+}
+/* Fish fly */
+@keyframes fly {
+  0%,
+  100% {
+    right:25%;
+    transform:rotateY(180deg) rotate(45deg);
+    top:35px;
+  }
+  1% {
+    transform:rotateY(0deg) rotate(45deg);
+  }
+  25% {
+    top:38px;
+  }
+  49% {
+    transform:rotateY(0deg) rotate(45deg);
+  }
+  50% {
+    right:57%;
+    top:35px;
+    transform:rotateY(180deg) rotate(45deg);
+  }
+  75% {
+    top:38px;
+  }
+}
+
+/* Shadow fly */
+@keyframes fly2 {
+  0%,
+  100% {
+    right:25%;
+    transform:rotateY(180deg);
+    width:75px;
+    height:10px;
+  }
+  1% {
+    transform:rotateY(0deg);
+  }
+  25% {
+    width:100px;
+    height:20px;
+  }
+  49% {
+    transform:rotateY(0deg);
+  }
+  50% {
+    right:57%;
+    transform:rotateY(180deg);
+    width:75px;
+    height:10px;
+  }
+  75% {
+    width:100px;
+    height:20px;    
+  }
+}
+
+/************* BOX 4 -  **************************************/
+.box:nth-child(4) {
+  border-radius: 30%;
+  background: #3f515a;
+  border: solid 2px #022d42;
+  box-shadow: inset 1px 1px 20px 2px #022d42;
+}
+
+/************* BOX 5 -  **************************************/
+.box:nth-child(5) {
+  border-radius: 30%;
+  background: #3f515a;
+  border: solid 2px #022d42;
+  box-shadow: inset 1px 1px 20px 2px #022d42;
+}
+
+/************* BOX 6 -  **************************************/
+.box:nth-child(6) {
+  border-radius: 25px;
+}
 
 
 /************* BOX 7 - CLOWN FISH SWIMMING LEFT **************/
+.box:nth-child(7) {
+  border-radius: 25px;
+  box-shadow: inset 1px 0px 20px 11px #0a000a;
+}
+
+.box:nth-child(7) .clown-fish:nth-child(1) {
+    animation: move-left 5.4s infinite linear;
+    margin-top: 65px;
+    transform: rotate(0deg) translate(0px, 0px) rotate(0deg);
+}
+
+.box:nth-child(7) .clown-fish:nth-child(2) {
+    margin-top: 55px;
+    animation: move-left-lrg 7.5s infinite linear;
+    transform: scale(1.4) rotate(0deg) translate(0px, 0px) rotate(0deg);
+}
+
+.box:nth-child(7) .clown-fish:nth-child(3) {
+    margin-top: 78px;
+    animation: move-left 5s infinite linear;
+    transform: scale(1.1) rotate(0deg) translate(0px, 0px) rotate(0deg);
+    margin-left: -130px;
+}
+
+.box:nth-child(7) .clown-fish:nth-child(4) {
+    margin-top: 89px;
+    animation: move-left 4.4s infinite linear;
+    transform: scale(.6) rotate(0deg) translate(0px, 0px) rotate(0deg);
+    margin-left: -120px;
+}
+
+.box:nth-child(7) .clown-fish:nth-child(5) {
+    margin-top: 58px;
+    animation: move-left 4.6s infinite linear;
+    transform: rotate(0deg) translate(0px, 0px) rotate(0deg);
+    margin-left: -135px;
+}
+
+.box:nth-child(7) .clown-fish:nth-child(6) {
+    margin-top: 63px;
+    animation: move-left 6.7s infinite linear;
+    margin-left: -140px;
+    transform: scale(1.2) rotate(0deg) translate(0px, 0px) rotate(0deg);
+}
+
+.box:nth-child(7) .clown-fish:nth-child(7) {
+    margin-top: 71px;
+    animation: move-left 6.1s infinite linear;
+    margin-left: -150px;
+    transform: rotate(0deg) translate(0px, 0px) rotate(0deg);
+}
+
+.box:nth-child(7) .clown-fish:nth-child(8) {
+    margin-top: 67px;
+    animation: move-left 4.2s infinite linear;
+    margin-left: -155px;
+    transform: rotate(0deg) translate(0px, 0px) rotate(0deg);
+}
 
 
 
 /************* BOX 8 - CLOWN FISH SWIMMING RIGHT **************/
+.box:nth-child(8) {
+  border-radius: 25px;
+  box-shadow: inset 1px 0px 20px 11px #012927;
+}
+
 .start {
     width: 155px;
     height: 200px;
@@ -240,6 +435,8 @@ body {
     position: absolute;
     display: flex;
     align-items: left;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
 }
 
 .end {
@@ -250,6 +447,8 @@ body {
     right: 0;
     float: right;
     display: inline-block;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
 }
 
 .clown-fish {
@@ -284,11 +483,12 @@ body {
 }
 
 .clown-fish:nth-child(1) {
-    animation: move-right 3s infinite linear;
+    animation: move-right 5.4s infinite linear;
         margin-left: 15px;
 }
 
 .clown-fish:nth-child(2) {
+    margin-top: 45px;
     animation: move-right-lrg 7.5s infinite linear;
     transform: scale(1.4) rotate(180deg);
 }
@@ -301,7 +501,7 @@ body {
 }
 
 .clown-fish:nth-child(4) {
-    margin-top: 25px;
+    margin-top: 40px;
     animation: move-right 4.4s infinite linear;
     transform: scale(.6) rotate(180deg);
     margin-left: -120px;
@@ -320,14 +520,17 @@ body {
 }
 
 .clown-fish:nth-child(7) {
-    animation: move-right 6.5s infinite linear;
+    margin-top: 55px;
+    animation: move-right 6.1s infinite linear;
     margin-left: -150px;
 }
 
 .clown-fish:nth-child(8) {
+    margin-top: -44px;
     animation: move-right 4.2s infinite linear;
     margin-left: -155px;
 }
+
 
 
 
@@ -343,6 +546,17 @@ body {
     0% { left: -5%; }
     50% { left: 71%; }
     100% { left: 71%; }
+}
+
+@keyframes move-left {
+    from { left: 78%; }
+    to { left: 0%; }
+}
+
+@keyframes move-left-lrg {
+    0% { left: 65%; }
+    50% { left: -12%; }
+    100% { left: -12%; }
 }
 
 @keyframes wiggle {
