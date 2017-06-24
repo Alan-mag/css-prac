@@ -51,7 +51,7 @@ body {
 
 .box:nth-child(3) {
     flex-basis:400px;
-    background: aqua;
+    background: #00bcd4;
 }
 
 .box:nth-child(4) {
@@ -83,8 +83,10 @@ body {
 
 .box:nth-child(9) {
     flex-basis:200px;
-    background:#F5F2E9;
+    background: #085592;
     position: relative;
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
 }
 
 /* ***SHAPES*** */
@@ -224,8 +226,38 @@ body {
 
 /** Add to BOX Style ***/
 
+.end {
+    width: 155px;
+    height: 200px;
+    background: #012927;
+    position: relative;
+    right: 0;
+    float: right;
+    display: inline-block;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.start {
+    width: 155px;
+    height: 200px;
+    background: #012927;
+    position: absolute;
+    display: flex;
+    align-items: left;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
 
 /************* BOX 1 - SQUID **************/
+
+.box:nth-child(1) {
+  border-radius: 25px;
+  border-top-right-radius: 75px;
+  border-bottom-left-radius: 75px;
+}
+
 .pearl {
   width: 100px;
   height: 100px;
@@ -299,6 +331,11 @@ body {
 .box:nth-child(2) {
   border-radius: 25px;
   box-shadow: inset 1px 0px 20px 11px #014c01;
+  border-bottom-left-radius: 75px;
+}
+
+.box:nth-child(2) .start {
+  border-bottom-left-radius: 75px;
 }
 
 
@@ -306,6 +343,7 @@ body {
 .box:nth-child(3) {
   border-radius: 25px;
   position: relative;
+  border-bottom-right-radius: 75px;
 }
 
 .square-fish {
@@ -489,6 +527,28 @@ span:nth-of-type(3) {
 /************* BOX 6 -  **************************************/
 .box:nth-child(6) {
   border-radius: 25px;
+  background: url(octo-red.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-bottom-right-radius: 50px;
+  border-top-left-radius: 75px;
+}
+
+#octo-eye {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: white;
+  margin: 5px -20px auto 215PX;
+  position: absolute;
+}
+
+#octo-pupil {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: black;
+  margin: 0 auto;
 }
 
 
@@ -496,6 +556,8 @@ span:nth-of-type(3) {
 .box:nth-child(7) {
   border-radius: 25px;
   box-shadow: inset 1px 0px 20px 11px #0a000a;
+  border-bottom-left-radius: 100px;
+  border-top-left-radius: 40px;
 }
 
 .box:nth-child(7) .clown-fish:nth-child(1) {
@@ -552,12 +614,18 @@ span:nth-of-type(3) {
     transform: rotate(0deg) translate(0px, 0px) rotate(0deg);
 }
 
+.box:nth-child(7) .start {
+  border-bottom-left-radius: 100px;
+  border-top-left-radius: 40px;
+}
+
 
 
 /************* BOX 8 - CLOWN FISH SWIMMING RIGHT **************/
 .box:nth-child(8) {
   border-radius: 25px;
   box-shadow: inset 1px 0px 20px 11px #012927;
+  border-top-right-radius: 100px;
 }
 
 .start {
@@ -571,7 +639,7 @@ span:nth-of-type(3) {
     border-bottom-left-radius: 25px;
 }
 
-.end {
+.box:nth-child(8) .end {
     width: 155px;
     height: 200px;
     background: #012927;
@@ -579,7 +647,7 @@ span:nth-of-type(3) {
     right: 0;
     float: right;
     display: inline-block;
-    border-top-right-radius: 25px;
+    border-top-right-radius: 100px;
     border-bottom-right-radius: 25px;
 }
 
@@ -714,7 +782,7 @@ span:nth-of-type(3) {
   left: 0px;
   top: 0px;
   z-index: 1;
-  border-left: 55px solid #F5F2E9;
+  border-left: 55px solid #00BCD4;
   position: absolute;
 }
 
